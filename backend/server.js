@@ -31,3 +31,5 @@
  });
  
  app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
+ 
+ return app(req, res);  // Essa linha garante que a Vercel possa usar o Express
